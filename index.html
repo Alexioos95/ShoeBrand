@@ -58,20 +58,33 @@
 
                 <div class="feature reverse">
                     <div class="content">
-                        <p class="title">Lightweight</p>
-                        <p class="desc">Upper mesh material provides proper ventilation and reduction in the weight of the shoes.</p>
+                        <p class="title">Affordable</p>
+                        <p class="desc">A quality offer for an unbeatable price on the market.</p>
                     </div>
                     <img src="images/orange-shoes.jpg" alt="Orange shoe">
                 </div>
 
                 <div class="feature">
                     <div class="content">
-                        <p class="title">Lightweight</p>
-                        <p class="desc">Upper mesh material provides proper ventilation and reduction in the weight of the shoes.</p>
+                        <p class="title">Playable</p>
+                        <p class="desc">Used by the greatest players of our time for their professional matches.</p>
                     </div>
                     <img src="images/brown-shoes.jpg" alt="Brown shoe">
                 </div>
             </section>
         </main>
+
+		<script>
+			const menu = document.querySelector(".svg-menu")
+			const close = document.querySelector(".svg-close")
+			const nav = document.querySelector("nav")
+
+			menu.addEventListener("click", () => {
+				nav.classList.add("open-nav")
+			})
+            close.addEventListener("click", () => {
+				nav.classList.remove("open-nav")
+			})
+		</script>
     </body>
 </html>
